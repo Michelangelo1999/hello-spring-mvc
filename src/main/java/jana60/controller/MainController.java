@@ -18,8 +18,8 @@ public class MainController {
 	}
 	
 	@GetMapping("/ora")
-	public String ora(@RequestParam(name="name") String name, Model model) {
-		name = "Michelangelo";
+	public String ora(Model model) {
+		String name = "Michelangelo";
 		
 		model.addAttribute("name", name);
 		model.addAttribute("time", LocalTime.now());
